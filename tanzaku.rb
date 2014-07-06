@@ -1,4 +1,4 @@
-#-*- coding: utf-8
+#-*- coding: utf-8 -8
 
 Plugin.create(:tanzaku) do
   UserConfig[:tanzaku_ni_suru] ||= true
@@ -19,9 +19,9 @@ Plugin.create(:tanzaku) do
       str = ""
       str = to unless to.nil?
       str += "\n" unless to.nil?
-      str += "┏┷┓\n┃　┃\n┃"
+      str += ["┏┷┓\n┃　┃\n┃", "★┷┓\n┃　┃\n┃"].choice
       text.each_char {|char| str += char + "┃\n┃"}
-      str += "　┃\n┗━┛\n"
+      str += ["　┃\n┗━┛\n", "　┃\n┗━★\n"].choice
       buf.text = str
     end
     [gui_postbox]
