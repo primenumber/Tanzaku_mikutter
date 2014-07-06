@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -8
+#-*- coding: utf-8
 
 Plugin.create(:tanzaku) do
   UserConfig[:tanzaku_ni_suru] ||= true
