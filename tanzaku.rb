@@ -19,9 +19,9 @@ Plugin.create(:tanzaku) do
       str = ""
       str = to unless to.nil?
       str += "\n" unless to.nil?
-      str += "┏┷┓\n┃　┃\n┃"
+      str += ["┏┷┓\n┃　┃\n┃", "★┷┓\n┃　┃\n┃"].sample
       text.each_char {|char| str += char + "┃\n┃"}
-      str += "　┃\n┗━┛\n"
+      str += ["　┃\n┗━┛\n", "　┃\n┗━★\n"].sample
       buf.text = str
     end
     [gui_postbox]
