@@ -1,7 +1,7 @@
 #-*- coding: utf-8
 
 Plugin.create(:tanzaku) do
-  UserConfig[:tanzaku_ni_suru] ||= true
+  UserConfig[:tanzaku_ni_suru] = true if UserConfig[:tanzaku_ni_suru].nil?
 
   settings "短冊" do
     boolean '短冊にする', :tanzaku_ni_suru
