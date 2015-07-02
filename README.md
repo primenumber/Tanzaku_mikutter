@@ -10,7 +10,7 @@ tanzaku.rbを~/.mikutter/plugin以下に置いてmikutterを起動します。
 ## Install
 
 ````
-    $ mkdir -p ~/.mikutter/plugin/; git clone https://github.com/primenumber/Tanzaku_mikutter.git ~/.mikutter/plugin/Tanzaku_mikutter/
+    $ mkdir -p ~/.mikutter/plugin/; git clone https://github.com/primenumber/Tanzaku_mikutter.git ~/.mikutter/plugin/tanzaku/
 ````
 
 ## License
